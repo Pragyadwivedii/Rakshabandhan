@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff5f7, #ffe4ec);
+    color: #49323b;
+    text-align: center;
+}
+
+
+/* =========================
+   WELCOME SCREEN
+========================= */
+
+.welcome {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff5f7,
+        #ffe1ea,
+        #fff0f5
+    );
+
+    transition: 0.8s ease;
+}
+
+.welcome-content {
+    max-width: 600px;
+
+    padding: 50px 30px;
+
+    background: rgba(255,255,255,0.75);
+
+    border-radius: 30px;
+
+    box-shadow: 0 15px 40px rgba(120, 50, 80, 0.15);
+
+    backdrop-filter: blur(10px);
+}
+
+.ribbon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.welcome h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+
+    background: #e97899;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #d95f83;
+}
+
+
+/* =========================
+   HIDE / SHOW
+========================= */
+
+.welcome.hide {
+    display: none;
+}
+
+.surprise-content {
+    display: none;
+}
+
+.surprise-content.show {
+    display: block;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+.hero-rakhi {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.bond,
+.memories,
+.message {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.bond h2,
+.memories h2,
+.message h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.bond > p,
+.memories > p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   BOND CARDS
+========================= */
+
+.bond-cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.bond-card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(100, 50, 70, 0.1);
+
+    transition: 0.3s;
+}
+
+.bond-card:hover {
+    transform: translateY(-8px);
+}
+
+.bond-card span {
+    font-size: 40px;
+}
+
+.bond-card h3 {
+    margin: 15px 0 10px;
+}
+
+.bond-card p {
+    line-height: 1.5;
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.photo {
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(100, 50, 70, 0.15);
+
+    transition: 0.3s;
+}
+
+.photo:hover {
+    transform: rotate(-2deg) scale(1.03);
+}
+
+.photo img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message-card {
+    background: white;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 45px 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 35px rgba(100, 50, 70, 0.12);
+}
+
+.message-icon {
+    font-size: 45px;
+}
+
+.message-card h2 {
+    margin: 15px 0 20px;
+}
+
+.message-card p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+.message-card h3 {
+    margin-top: 25px;
+
+    font-size: 28px;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    padding: 90px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fbd0dc,
+        #ffeaf0
+    );
+}
+
+.final-rakhi {
+    font-size: 60px;
+}
+
+.final h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.final p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .welcome h1 {
+        font-size: 35px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .bond-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .bond-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo img {
+        height: 350px;
+    }
+
+}
+/* 🌸 Falling Flowers */
+
+.falling-flower {
+    position: fixed;
+
+    top: -50px;
+
+    font-size: 25px;
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    animation: flowerFall linear forwards;
+}
+
+@keyframes flowerFall {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(50vh) rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
